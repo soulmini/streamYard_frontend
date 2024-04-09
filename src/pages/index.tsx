@@ -14,7 +14,6 @@ export default function Home() {
   };
 
   return (
-    <div>
     <div className="h-[47rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
       <div className="max-w-2xl mx-auto p-4">
         <h1 className="relative z-10 text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">
@@ -29,10 +28,6 @@ export default function Home() {
             <button onClick={handleLogin} className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
             <button onClick={handleSignup} className="bg-white hover:bg-gray-200 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Signup</button>
       </div>
-    </div>
-
-    <VideoScreen/>
-      
     </div>
   );
 }
