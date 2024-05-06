@@ -4,16 +4,16 @@ import { Input } from "./components/ui/input";
 import { cn } from "@/utils/cn";
 
 function Signup() {
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e : any) => {
     e.preventDefault();
     console.log(fistName, lastName);
 
-    const res = await fetch('uro', {
+    const res = await fetch('http://localhost:3000/auth/signup', {
       method : "POST",
       headers: {
         'Content-Type': 'application/json',
       },
-      body :  JSON.stringify({fistName, lastName, email, password}),
+      body :  JSON.stringify({firstName : fistName , lastName, email, password}),
     })
 
   };
@@ -51,7 +51,7 @@ function Signup() {
           <LabelInputContainer className="mb-4">
             <Label htmlFor="email" className="text-white">Email Address</Label>
             <Input id="email" className="bg-black text-white" placeholder="projectmayhem@fc.com" type="email" onChange={(e)=>{
-              setEmail(e.target.Value);
+              setEmail(e.target.value);
             }}/>
           </LabelInputContainer>
           <LabelInputContainer className="mb-4">

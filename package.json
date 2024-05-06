@@ -19,6 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-resizable-panels": "^2.0.16",
+    "react-router-dom": "^6.23.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -31,7 +32,6 @@
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   },
-  
   "main": "index.js",
   "repository": "https://github.com/soulmini/streamYard_frontend.git",
   "author": "ayush6999 <ayushjaiswal6999@gmail.com>",
